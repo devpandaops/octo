@@ -27,10 +27,10 @@
 
 ## Sobre o Projeto
 
-A API de cliente consiste numa microserviço de cadastro de clientes, endereços, e pedidos.
-Para criar, alterar e buscar endereços e pedidos é necessário que o cliente esteja logado, o mesmo é validado por autenticação JWT.
+<p algin="justify">A API de cliente consiste numa microserviço de cadastro de clientes, endereços, e pedidos.</p>
+<p algin="justify">Para criar, alterar e buscar endereços e pedidos é necessário que o cliente esteja logado, o mesmo é validado por autenticação JWT.
 O pedido antes de ser persistido é validado, confirmando se a loja existe, se o produto existe e se há quantidade suficiente para o mesmo.
-A api do cliente recebe, via RabbitMQ, os dados dos produtos e lojas cadastrados na api de loja para que se possa fazer a validação. Também envia os dados do pedido criado (Cliente, Endereço, Loja, Produtos, Valor Total, data de criação, data de envio, data de entrega e estado do pedido) para a api de loja. Quando o estado do pedido estiver como ENVIADO é possível, por meio da api do cliente, informar a entrega do mesmo refletindo os dados na api de loja.
+A api do cliente recebe, via RabbitMQ, os dados dos produtos e lojas cadastrados na api de loja para que se possa fazer a validação. Também envia os dados do pedido criado (Cliente, Endereço, Loja, Produtos, Valor Total, data de criação, data de envio, data de entrega e estado do pedido) para a api de loja. Quando o estado do pedido estiver como ENVIADO é possível, por meio da api do cliente, informar a entrega do mesmo refletindo os dados na api de loja.</p>
 
 ## Modelagem do banco de dados
   
